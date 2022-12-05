@@ -66,6 +66,10 @@ body {
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
+.back2 {
+  background-color: rgb(56, 56, 56);
+  border-radius: 8px;
+}
 .top-button {
   border: 2px solid black;
   border-radius: 8px;
@@ -150,7 +154,11 @@ body {
   border-radius: 10px;
 }
 .border-txt{
-  border: 5px solid rgb(109, 21, 21);
+  border: 3px solid rgb(109, 21, 21);
+}
+.border-txt2{
+  border-top: 5px solid rgb(109, 21, 21);
+  border-bottom: 5px solid rgb(109, 21, 21);
 }
 .list {
   text-align: left;
