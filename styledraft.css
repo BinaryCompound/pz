@@ -1,13 +1,62 @@
 body{
-    background-color: #d77373;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23600bea' fill-opacity='1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-color: #000000;
 }
 .top{
   display: flex;
   justify-content: left;
 }
+.top2{
+  display: flex;
+  justify-content: center;
+}
+.brd{
+  border: 4px solid black;
+  border-radius: 8px;
+}
+.txt{
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 30px;
+}
+.txt2{
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 30px;
+  text-align: left;
+}
+.txt3{
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 30px;
+  text-align: center;
+}
+.txt4{
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+}
+.vl {
+  border-left: 6px solid rgb(255, 255, 255);
+  height: 200px;
+}
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
 .panel{
-  background-color: rgb(203, 101, 250);
+  background-color: rgb(109, 21, 21);
+  border-radius: 8px;
+}
+.back{
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+.back2{
+  background-color: rgb(29, 28, 28);
+  border-radius: 10px;
 }
 .btn{
   border: 2px solid black;
@@ -17,13 +66,12 @@ body{
   font-size: 20px;
   font-family: fantasy;
   margin: 5px;
-  background-color: rgb(255, 104, 210);
-  color: black;
+  background-color: rgb(146, 144, 144);
+  color: rgb(0, 0, 0);
   width: fit-content;
 }
 .btn:hover{
-  background-color: rgb(187, 18, 69);
-  color: rgb(195, 126, 216);
+  color: rgb(255, 255, 255);
 }
 .block {
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -34,7 +82,7 @@ body{
   transition: color var(--time);
 }
 .btn2:hover{
-  background-color: azure;
+  background-color: rgb(0, 0, 0);
 }
 .btn2::before{
   position: absolute;
@@ -50,3 +98,17 @@ body{
 .btn2:hover::before{
   transform: scaleX(1);
 }
+.center{
+  display: flex;
+  justify-content: center;
+}
+.disp{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 2rem;
+}
+
+
+
+
+
