@@ -30,6 +30,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.location-img2{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.location-img3{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
 
 .font {
   color: #fff;
@@ -112,6 +122,11 @@ body {
   grid-template-rows: auto;
   gap: 2rem;
 }
+.grid3{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  gap: 1rem;
+}
 
 .separator {
   height: 100%;
@@ -121,6 +136,12 @@ body {
 }
 .line {
   border-bottom: 5px solid white;
+  margin: 20px;
+ }
+ .line2 {
+  border-bottom: 5px solid white;
+  margin: 100px;
+  width: 40%;
  }
 .header {
   width: fit-content;
@@ -129,5 +150,8 @@ body {
   border-radius: 10px;
 }
 .border-txt{
-  border: 5px solid white;
+  border: 5px solid rgb(109, 21, 21);
+}
+.list {
+  text-align: left;
 }
