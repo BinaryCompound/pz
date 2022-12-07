@@ -1,6 +1,11 @@
+:root {
+  --color-primary: rgb(109, 21, 21);
+}
+
 body {
   background-color: #010111;
 }
+
 .top {
   display: flex;
   align-items: center;
@@ -12,33 +17,85 @@ body {
 
   padding: 5px;
 }
-.img-txt{
+
+.top-image {
+  margin-inline-start: auto;
+}
+
+.top-button {
+  --time: 0.3s;
+
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+
+  text-decoration: none;
+  font-size: 20px;
+  font-family: fantasy;
+
+  background-color: rgb(146, 144, 144);
+  color: rgb(0, 0, 0);
+  transition: color var(--time) ease-in-out,
+    background-color var(--time) ease-in-out;
+}
+
+.top-button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+/*
+
+ Если тебе нужен этот эффект, то раскомментируй этот код.
+ Если не нужен - удали это
+
+.top-button {
+  position: relative;
+
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.top-button::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: aqua;
+
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--time) ease-in-out;
+  z-index: -1;
+}
+
+.top-button:hover::before {
+  transform: scaleX(1);
+}
+
+*/
+
+.img-txt {
   display: flex;
   align-items: center;
   padding: 5px;
-}
-.top-image {
-  margin-inline-start: auto;
 }
 
 .top2 {
   display: flex;
   justify-content: center;
 }
-.location-img{
-  display: flex;
-  flex-direction: column;
+
+.location-img {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-flow: row;
   align-items: center;
-}
-.location-img2{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-}
-.location-img3{
-  display: flex;
-  flex-direction: column;
-  align-items: right;
+  justify-items: center;
 }
 
 .font {
@@ -47,16 +104,10 @@ body {
   font-size: 30px;
 }
 
-.txt2 {
-  text-align: left;
-}
-.txt3 {
+.text-center {
   text-align: center;
 }
-.txt4 {
-  text-align: center;
-  align-items: center;
-}
+
 .img {
   display: block;
   margin-left: auto;
@@ -70,48 +121,9 @@ body {
   background-color: rgb(56, 56, 56);
   border-radius: 8px;
 }
-.top-button {
-  border: 2px solid black;
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: fantasy;
-  background-color: rgb(146, 144, 144);
-  color: rgb(0, 0, 0);
-}
-.top-button:hover {
-  color: rgb(255, 255, 255);
-}
+
 .block {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.btn2 {
-  --time: 0.3s;
-  position: relative;
-  transition: color var(--time);
-}
-.btn2:hover {
-  background-color: rgb(0, 0, 0);
-}
-.btn2::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: aqua;
-  content: "";
-  transform: X;
-  transform-origin: left;
-  transition: transform var(--time) ease-in-out;
-  z-index: -1;
-}
-
-.btn2:hover::before {
-  transform: scaleX(1);
-}
-
-.center {
-  justify-items: center;
 }
 
 .grid {
@@ -122,13 +134,15 @@ body {
 }
 .grid2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr repeat(2, auto);
   grid-template-rows: auto;
   gap: 2rem;
 }
-.grid3{
+.grid3 {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -141,25 +155,22 @@ body {
 .line {
   border-bottom: 5px solid white;
   margin: 20px;
- }
- .line2 {
+}
+.line2 {
   border-bottom: 5px solid white;
   margin: 100px;
   width: 40%;
- }
+}
 .header {
   width: fit-content;
   text-align: center;
   background-color: rgb(29, 28, 28);
   border-radius: 10px;
 }
-.border-txt{
-  border: 3px solid rgb(109, 21, 21);
+.border-txt {
+  border: 3px solid var(--color-primary);
 }
-.border-txt2{
-  border-top: 5px solid rgb(109, 21, 21);
-  border-bottom: 5px solid rgb(109, 21, 21);
-}
-.list {
-  text-align: left;
+.border-txt2 {
+  border-top: 5px solid var(--color-primary);
+  border-bottom: 5px solid var(--color-primary);
 }
