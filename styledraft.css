@@ -17,6 +17,12 @@ body {
 
   padding: 5px;
 }
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  right: 0;
+}
 
 .top-image {
   margin-inline-start: auto;
@@ -150,17 +156,23 @@ span{
   gap: 1rem;
 }
 
+.grid4{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  padding-top: 5rem;
+  
+}
+
 .separator {
   height: 100%;
   width: 5px;
 
   background-color: white;
 }
+
 .line {
-  border-bottom: 5px solid white;
-  margin: 20px;
-}
-.line2 {
   border-bottom: 5px solid white;
   margin: 100px;
 }
