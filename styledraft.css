@@ -173,10 +173,6 @@ span{
   gap: 2rem;
   justify-content: center;
 }
-.flx{
-  display: flex;
-  justify-content: center;
-}
 
 .separator {
   height: 100%;
