@@ -2,6 +2,10 @@
   --color-primary: rgb(109, 21, 21);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000000;
   color: #fff;
@@ -129,6 +133,8 @@ span {
   display: grid;
   grid-template-columns: minmax(auto, 50%) repeat(2, 1fr);
   gap: 2rem;
+
+  scroll-margin-block-start: 80px;
 }
 
 .grid3 {
