@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styledraft.css" type="text/css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ССС</title>
-    <script src="java.js"></script>
+    <title>Project Zomboid</title>
+    <link rel="stylesheet" href="styledraft.css" type="text/css" />
   </head>
   <body>
-    <nav class="top fixed">
-      <a href="#" class="top-button btn2">Кнопка</a>
-      <a href="#" class="top-button btn2">Кнопка</a>
-      <a href="#" class="top-button btn2">Кнопка</a>
-      <a href="#" class="top-button btn2">Кнопка</a>
-      <a href="#" class="top-button btn2">Кнопка</a>
-      </div>
-      <img class="top-image" src="spiffo.png" alt="p" width="42" height="44" />
+    <nav class="navigation">
+      <a href="#" class="navigation-button">Кнопка</a>
+      <a href="#" class="navigation-button">Кнопка</a>
+      <a href="#" class="navigation-button">Кнопка</a>
+      <a href="#" class="navigation-button">Кнопка</a>
+      <a href="#" class="navigation-button">Кнопка</a>
+      <img
+        class="navigation-image"
+        src="spiffo.png"
+        alt="p"
+        width="42"
+        height="44"
+      />
     </nav>
-    <img src="PzLogo.png" alt="p" class="img" />
-    <div class="top2 txt font">
-      <h1 class="header">- Руководство по выживанию -</h1>
-    </div>
+    <img src="PzLogo.png" alt="Project Zomboid logo" class="logo" />
+    <h1 class="header">- Руководство по выживанию -</h1>
     <main>
-      <section class="text-center font grid">
+      <section class="text-center grid">
         <p>
           Это полное руководство по основным механикам игры. Оно поможет лучше
           разобраться, как правильно выжить и продержаться максимально долго.
@@ -34,22 +36,14 @@
           На данный момент у игры билд 47.22
         </p>
       </section>
-      <div class="text-center font">
-        <h1>Еда и её приготовление</h1>
-      </div>
-      <section></section>
-      <section>
-        <div class="txt font">
-          <h1 class="top2 img-txt">
-            <img src="food3.jpg" alt="f" width="98" height="128" />Обучение
-            основам
-            <img src="food.jpg" alt="f" width="98" height="128" />
-          </h1>
-        </div>
-      </section>
+      <h1 class="text-center">Еда и её приготовление</h1>
+      <h2 class="header-with-images">
+        <img src="food3.jpg" alt="f" width="98" height="128" />Обучение основам
+        <img src="food.jpg" alt="f" width="98" height="128" />
+      </h2>
       <div class="line"></div>
-      <section class="font grid2">
-        <div class="border-txt back2 text-center">
+      <section class="craft">
+        <div class="bordered-container">
           <p>
             Использование приборов: Если вы хотите разогреть или пожарить пищу
             то для этого подойдут такие приборы как: Костёр, Плита,
@@ -57,9 +51,9 @@
             прибор нужно положить туда пищу и нажать кнопку включить, после чего
             пойдет готовка
           </p>
-          <img src="tt.png" alt="c" width="600" height="365" />
+          <img src="tt.png" alt="c" class="craft-img-screenshot" />
         </div>
-        <div class="border-txt back2 text-center">
+        <div class="bordered-container">
           <p>Вот так выглядят приборы для приготовления</p>
           <img src="Antique_Oven.png" alt="g" />
           <img src="BBQ_big.png" alt="g" />
@@ -68,9 +62,12 @@
           <img src="Fireplace.gif" alt="g" />
           <img src="Oven.png" alt="g" />
           <img src="mic.png" alt="g" />
-          <p>Один и более из этих приборов можно найти в любом жилом доме <span>(грили находятся всегда на улице)</span></p>
+          <p>
+            Один и более из этих приборов можно найти в любом жилом доме
+            <span>(грили находятся всегда на улице)</span>
+          </p>
         </div>
-        <div class="location-img border-txt back2 text-center">
+        <div class="location-img bordered-container">
           <p>Посуда для готовки разных блюд:</p>
           <img src="BakingPan.png" alt="p" width="64" height="64" />
           <img src="Bowl.png" alt="p" width="64" height="64" />
@@ -99,7 +96,7 @@
             <li>Нож (любой) - Нарезка хлеба и торта</li>
           </ul>
         </div>
-        <div class="border-txt grid3">
+        <div class="bordered grid3">
           <img src="BowlFull.png" alt="f" width="64" height="64" />
           <img src="Burger.png" alt="f" width="64" height="64" />
           <img src="EggOmelette.png" alt="f" width="64" height="64" />
@@ -114,249 +111,372 @@
           <img src="TZ_CraftSalat.png" alt="f" width="64" height="64" />
         </div>
         <div class="location-img">
-          <img src="pz4.jpg" alt="p">
+          <img
+            class="craft-img-logo"
+            src="pz4.jpg"
+            alt="Project zomboid image"
+          />
         </div>
       </section>
       <div class="line"></div>
-      <section class="top2">
-        <div class="text-center font">
-          <h1>Маринование пищи</h1>
-        </div>
-      </section>
-      <section class="grid4 font">
-        <div class="border-txt back2 text-left">
+      <h1 class="text-center">Маринование пищи</h1>
+      <section class="grid4">
+        <div class="bordered-container">
           <p>
-            Для маринования овощей вам потребуется БАНКА и КРЫШКА
-            Данные предметы можно найти на кухнях в гарнитурах и в гаражах
-            Так-же вам могут встретится коробки с банками и крышками которые вы можете распаковать через меню крафтов.
+            Для маринования овощей вам потребуется БАНКА и КРЫШКА Данные
+            предметы можно найти на кухнях в гарнитурах и в гаражах Так-же вам
+            могут встретится коробки с банками и крышками которые вы можете
+            распаковать через меню крафтов.
           </p>
         </div>
-        <div class="border-txt back2 text-left">
+        <div class="bordered-container">
           <p>
-            Кроме банки и крышки нам потребуется УКСУС и САХАР которые вы можете найти на кухне в гарнитуре, для каждого крафта используется по 2 еденицы сахара и уксуса
-            Что-бы использовать 10 едениц воды в крафте вам понадобится бутылка с водой либо другая емкость с питьевой водой.
-            <span>(Полной бутылки уксуса и пачки сахара хватит примерно на 6-7 маринадов)</span>
+            Кроме банки и крышки нам потребуется УКСУС и САХАР которые вы можете
+            найти на кухне в гарнитуре, для каждого крафта используется по 2
+            еденицы сахара и уксуса Что-бы использовать 10 едениц воды в крафте
+            вам понадобится бутылка с водой либо другая емкость с питьевой
+            водой.
+            <span
+              >(Полной бутылки уксуса и пачки сахара хватит примерно на 6-7
+              маринадов)</span
+            >
           </p>
         </div>
-        <div class="text-center font border-txt back2 ">
-          <img src="Jar_Lid.png" alt="m" width="64" height="64">
+        <div class="bordered-container">
+          <img src="Jar_Lid.png" alt="m" width="64" height="64" />
           <p>Крышка</p>
-          <img src="JarEmpty2.png" alt="m" width="64" height="64">
+          <img src="JarEmpty2.png" alt="m" width="64" height="64" />
           <p>Банка</p>
-          <img src="Vinegar.png" alt="m" width="64" height="64">
+          <img src="Vinegar.png" alt="m" width="64" height="64" />
           <p>Уксус</p>
-          </span>
-          <img src="Sugar.png" alt="m" width="64" height="64">
-           <p>Сахар</p>
-          <img src="Sugar.png" alt="m" width="64" height="64">
+          <img src="Sugar.png" alt="m" width="64" height="64" />
+          <p>Сахар</p>
+          <img src="Sugar.png" alt="m" width="64" height="64" />
           <p>Сахар</p>
         </div>
       </section>
-      <section>
-        <div class="font top2">
-          <p>Вы можете мариновать такие овощи как: <span>ТОМАТ, КАРТОШКА, БАКЛАЖАН, ЛУК-ПОРЕЙ, КАПУСТА, БРОКОЛИ, МОРКОВЬ, РЕДИС, СЛАДКИЙ ПЕРЕЦ</span>.</p>
-        </div>
-      </section>
-      <section class="grid4">
-        <div class="text-left font border-txt back2">
+      <p>
+        Вы можете мариновать такие овощи как:
+        <span
+          >ТОМАТ, КАРТОШКА, БАКЛАЖАН, ЛУК-ПОРЕЙ, КАПУСТА, БРОКОЛИ, МОРКОВЬ,
+          РЕДИС, СЛАДКИЙ ПЕРЕЦ</span
+        >.
+      </p>
+      <section class="all-food">
+        <div class="bordered-container">
           <p>Все актуальные крафты маринованной пищи:</p>
-          <img src="inf.png" alt="f" width="955" height="985"/>
+          <img class="all-food-image" src="inf.png" alt="f" />
         </div>
-        <div class="font text-left">
-          <p>Полной бутылки уксуса и пачки сахара хватит примерно на 6-7 маринадов</p>
-          <p><span>ВНИМАНИЕ!</span> Маринады нужно хранить в не холодном месте, с плюсовой температурой</p>
-        </div>
+        <p>
+          Полной бутылки уксуса и пачки сахара хватит примерно на 6-7 маринадов
+          <br />
+          <br />
+          <span>ВНИМАНИЕ!</span> Маринады нужно хранить в не холодном месте, с
+          плюсовой температурой
+        </p>
       </section>
-      <div class="font text-center top2">
-      <h1>Расход сытости ингредиентов</h1>
-      </div>
-      <div class="font text-center top2">
-        <p>Это то количество пищи которое идет в блюдо</p>
-      </div>
-      <section class="text-center font2 grid5">
-        <div>
-          <table>
-            <caption>Мясо</caption>
-            <tr>
-              <th>Ингридиент</th>
-              <th>Суп</th>
-              <th>Рагу</th>
-              <th>Салат</th>
-              <th>Жаркое</th>
-              <th>Жаренные овощи</th>
-              <th>Сэндвич</th>
-              <th>Бутерброд</th>
-              <th>Пирог</th>
-            </tr>
-            <tr>
-              <td>Бекон</td>
-              <td>-</td>
-              <td>15</td>
-              <td>-</td>
-              <td>15</td>
-              <td>15</td>
-              <td>10</td>
-              <td>15</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Ломтики бекона</td>
-              <td>-</td>
-              <td>5</td>
-              <td>5</td>
-              <td>5</td>
-              <td>5</td>
-              <td>5</td>
-              <td>5</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>Кусочки бекона</td>
-              <td>-</td>
-              <td>3</td>
-              <td>3</td>
-              <td>3</td>
-              <td>3</td>
-              <td>3</td>
-              <td>3</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>Вяленое мясо</td>
-              <td>-</td>
-              <td>15</td>
-              <td>5</td>
-              <td>15</td>
-              <td>15</td>
-              <td>5</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Курица</td>
-              <td>15</td>
-              <td>15</td>
-              <td>10</td>
-              <td>15</td>
-              <td>10</td>
-              <td>5</td>
-              <td>10</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Филе рыбы</td>
-              <td>15</td>
-              <td>15</td>
-              <td>10</td>
-              <td>15</td>
-              <td>10</td>
-              <td>5</td>
-              <td>10</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Ветчина</td>
-              <td>-</td>
-              <td>-</td>
-              <td>10</td>
-              <td>-</td>
-              <td>-</td>
-              <td>10</td>
-              <td>10</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Котлета</td>
-              <td>-</td>
-              <td>15</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>10</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Баранья отбивная</td>
-              <td>15</td>
-              <td>15</td>
-              <td>10</td>
-              <td>15</td>
-              <td>15</td>
-              <td>5</td>
-              <td>10</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Свиная отбивная</td>
-              <td>15</td>
-              <td>15</td>
-              <td>10</td>
-              <td>15</td>
-              <td>15</td>
-              <td>5</td>
-              <td>10</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Мясо кролика</td>
-              <td>15</td>
-              <td>15</td>
-              <td>10</td>
-              <td>15</td>
-              <td>15</td>
-              <td>5</td>
-              <td>10</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Лосось</td>
-              <td>15</td>
-              <td>15</td>
-              <td>10</td>
-              <td>15</td>
-              <td>15</td>
-              <td>5</td>
-              <td>-</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Мясо маленького животного</td>
-              <td>15</td>
-              <td>15</td>
-              <td>10</td>
-              <td>15</td>
-              <td>15</td>
-              <td>5</td>
-              <td>10</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Мясо маленькой птицы</td>
-              <td>15</td>
-              <td>15</td>
-              <td>10</td>
-              <td>15</td>
-              <td>15</td>
-              <td>5</td>
-              <td>10</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Стейк</td>
-              <td>-</td>
-              <td>15</td>
-              <td>-</td>
-              <td>15</td>
-              <td>15</td>
-              <td>-</td>
-              <td>15</td>
-              <td>-</td>
-            </tr>
-          </table>
-          <div class="top2">
-          <table>
-            <caption>Разное</caption>
+      <h1 class="text-center">Расход сытости ингредиентов</h1>
+      <p class="text-center">Это то количество пищи которое идет в блюдо</p>
+      <section class="tables">
+        <table>
+          <caption>
+            Мясо
+          </caption>
+          <tr>
+            <th>Ингридиент</th>
+            <th>Суп</th>
+            <th>Рагу</th>
+            <th>Салат</th>
+            <th>Жаркое</th>
+            <th>Жаренные овощи</th>
+            <th>Сэндвич</th>
+            <th>Бутерброд</th>
+            <th>Пирог</th>
+          </tr>
+          <tr>
+            <td>Бекон</td>
+            <td>-</td>
+            <td>15</td>
+            <td>-</td>
+            <td>15</td>
+            <td>15</td>
+            <td>10</td>
+            <td>15</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Ломтики бекона</td>
+            <td>-</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Кусочки бекона</td>
+            <td>-</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Вяленое мясо</td>
+            <td>-</td>
+            <td>15</td>
+            <td>5</td>
+            <td>15</td>
+            <td>15</td>
+            <td>5</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Курица</td>
+            <td>15</td>
+            <td>15</td>
+            <td>10</td>
+            <td>15</td>
+            <td>10</td>
+            <td>5</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Филе рыбы</td>
+            <td>15</td>
+            <td>15</td>
+            <td>10</td>
+            <td>15</td>
+            <td>10</td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Ветчина</td>
+            <td>-</td>
+            <td>-</td>
+            <td>10</td>
+            <td>-</td>
+            <td>-</td>
+            <td>10</td>
+            <td>10</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Котлета</td>
+            <td>-</td>
+            <td>15</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>10</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Баранья отбивная</td>
+            <td>15</td>
+            <td>15</td>
+            <td>10</td>
+            <td>15</td>
+            <td>15</td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Свиная отбивная</td>
+            <td>15</td>
+            <td>15</td>
+            <td>10</td>
+            <td>15</td>
+            <td>15</td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Мясо кролика</td>
+            <td>15</td>
+            <td>15</td>
+            <td>10</td>
+            <td>15</td>
+            <td>15</td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Лосось</td>
+            <td>15</td>
+            <td>15</td>
+            <td>10</td>
+            <td>15</td>
+            <td>15</td>
+            <td>5</td>
+            <td>-</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Мясо маленького животного</td>
+            <td>15</td>
+            <td>15</td>
+            <td>10</td>
+            <td>15</td>
+            <td>15</td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Мясо маленькой птицы</td>
+            <td>15</td>
+            <td>15</td>
+            <td>10</td>
+            <td>15</td>
+            <td>15</td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Стейк</td>
+            <td>-</td>
+            <td>15</td>
+            <td>-</td>
+            <td>15</td>
+            <td>15</td>
+            <td>-</td>
+            <td>15</td>
+            <td>-</td>
+          </tr>
+        </table>
+        <table>
+          <caption>
+            Разное
+          </caption>
+          <tr>
+            <th>Ингредиент</th>
+            <th>Суп</th>
+            <th>Рагу</th>
+            <th>Салат</th>
+            <th>Жаркое</th>
+            <th>Жаренные овощи</th>
+            <th>Сэндвич</th>
+            <th>Бутерброд</th>
+            <th>Пирог</th>
+            <th>Торт</th>
+          </tr>
+          <tr>
+            <td>Хлеб</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Масло</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>10</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Сыр</td>
+            <td>15</td>
+            <td>-</td>
+            <td>5</td>
+            <td>-</td>
+            <td>-</td>
+            <td>5</td>
+            <td>5</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Шоколад</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Яйцо</td>
+            <td>-</td>
+            <td>-</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Соленья</td>
+            <td>-</td>
+            <td>-</td>
+            <td>5</td>
+            <td>-</td>
+            <td>-</td>
+            <td>5</td>
+            <td>5</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Сухая лапша</td>
+            <td>15</td>
+            <td>-</td>
+            <td>-</td>
+            <td>15</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Тофу</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+            <td>-</td>
+            <td>-</td>
+            <td>10</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+        <table>
+          <caption>
+            Овощи
+          </caption>
+          <thead>
             <tr>
               <th>Ингредиент</th>
               <th>Суп</th>
@@ -367,120 +487,9 @@
               <th>Сэндвич</th>
               <th>Бутерброд</th>
               <th>Пирог</th>
-              <th>Торт</th>
             </tr>
-            <tr>
-              <td>Хлеб</td>
-              <td>5</td>
-              <td>5</td>
-              <td>5</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Масло</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>10</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Сыр</td>
-              <td>15</td>
-              <td>-</td>
-              <td>5</td>
-              <td>-</td>
-              <td>-</td>
-              <td>5</td>
-              <td>5</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Шоколад</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Яйцо</td>
-              <td>-</td>
-              <td>-</td>
-              <td>10</td>
-              <td>10</td>
-              <td>10</td>
-              <td>10</td>
-              <td>10</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Соленья</td>
-              <td>-</td>
-              <td>-</td>
-              <td>5</td>
-              <td>-</td>
-              <td>-</td>
-              <td>5</td>
-              <td>5</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Сухая лапша</td>
-              <td>15</td>
-              <td>-</td>
-              <td>-</td>
-              <td>15</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Тофу</td>
-              <td>10</td>
-              <td>10</td>
-              <td>10</td>
-              <td>10</td>
-              <td>-</td>
-              <td>-</td>
-              <td>10</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-          </table>
-           </div>
-           <div class="top2">
-          <table>
-            <caption>Овощи</caption>
-            <tr>
-              <th>Ингредиент</th>
-              <th>Суп</th>
-              <th>Рагу</th>
-              <th>Салат</th>
-              <th>Жаркое</th>
-              <th>Жаренные овощи</th>
-              <th>Сэндвич</th>
-              <th>Бутерброд</th>
-              <th>Пирог</th>
-            </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>Авакадо</td>
               <td>8</td>
@@ -635,133 +644,132 @@
               <td>-</td>
               <td>3-4</td>
             </tr>
-          </table>
-        </div>
-          <div class="top2">
-          <table>
-            <caption>Соусы и специи</caption>
-            <tr>
-              <th>Ингредиент</th>
-              <th>Суп</th>
-              <th>Рагу</th>
-              <th>Салат</th>
-              <th>Жаркое</th>
-              <th>Жаренные овощи</th>
-              <th>Сэндвич</th>
-              <th>Бутерброд</th>
-              <th>Пирог</th>
-            </tr>
-            <tr>
-              <td>Кетчуп</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>2</td>
-              <td>2</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Майонез</td>
-              <td>-</td>
-              <td>-</td>
-              <td>2</td>
-              <td>-</td>
-              <td>-</td>
-              <td>2</td>
-              <td>2</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Горчица</td>
-              <td>-</td>
-              <td>-</td>
-              <td>2</td>
-              <td>-</td>
-              <td>-</td>
-              <td>2</td>
-              <td>2</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Сладкий перец</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>-</td>
-              <td>1</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>Соль</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>-</td>
-              <td>1</td>
-              <td>1</td>
-            </tr>
-          </table>
-        </div>
-        <div class="top2">
-          <table>
-            <caption>Фрукты</caption>
-            <tr>
-              <th>Ингредиент</th>
-              <th>Торт</th>
-            </tr>
-            <tr>
-              <td>Яблоко</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>Банан</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Ежевика</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>Черника</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>Виноград</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>Дикие ягоды</td>
-              <td>1-2</td>
-            </tr>
-            <tr>
-              <td>Лимон</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>Апельсин</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>Персик</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>Клубника</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>Ананас</td>
-              <td>8</td>
-            </tr>
-          </table>
-        </div>
-        </div>
+          </tbody>
+        </table>
+        <table>
+          <caption>
+            Соусы и специи
+          </caption>
+          <tr>
+            <th>Ингредиент</th>
+            <th>Суп</th>
+            <th>Рагу</th>
+            <th>Салат</th>
+            <th>Жаркое</th>
+            <th>Жаренные овощи</th>
+            <th>Сэндвич</th>
+            <th>Бутерброд</th>
+            <th>Пирог</th>
+          </tr>
+          <tr>
+            <td>Кетчуп</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>2</td>
+            <td>2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Майонез</td>
+            <td>-</td>
+            <td>-</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>2</td>
+            <td>2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Горчица</td>
+            <td>-</td>
+            <td>-</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>2</td>
+            <td>2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Сладкий перец</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Соль</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <table>
+          <caption>
+            Фрукты
+          </caption>
+          <tr>
+            <th>Ингредиент</th>
+            <th>Торт</th>
+          </tr>
+          <tr>
+            <td>Яблоко</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Банан</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Ежевика</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Черника</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Виноград</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Дикие ягоды</td>
+            <td>1-2</td>
+          </tr>
+          <tr>
+            <td>Лимон</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Апельсин</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Персик</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Клубника</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Ананас</td>
+            <td>8</td>
+          </tr>
+        </table>
       </section>
     </main>
   </body>
