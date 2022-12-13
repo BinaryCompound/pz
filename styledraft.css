@@ -9,12 +9,12 @@ html {
 body {
   background-color: rgb(14, 14, 14);
   color: #fff;
-  font-family: fantasy;
+  font-family: monospace;
   font-size: 30px;
 }
-.size-bread{
-  font-size: 25px;
-  font-family: monospace;
+.font-header{
+  font-family: COMIC SANS MS;
+  font-size: 30px;
 }
 
 .navigation {
