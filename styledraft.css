@@ -217,17 +217,6 @@ tbody>tr:nth-child(2n + 1) {
   border-radius: 8px;
 }
 
-.background-image {
-  
-  width: auto;
-  height: auto;
-  z-index: -1;
-}
-.flx {
-  display: flex;
-  justify-content: center;
-}
-
 .text-center {
   text-align: center;
 }
