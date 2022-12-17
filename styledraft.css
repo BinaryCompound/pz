@@ -12,11 +12,6 @@ body {
   font-family: monospace;
   font-size: 30px;
 }
-.font-header{
-  font-family: COMIC SANS MS;
-  font-size: 30px;
-}
-
 .navigation {
   position: sticky;
   /* Same as body margin */
