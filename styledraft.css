@@ -12,6 +12,7 @@ body {
   font-family: monospace;
   font-size: 30px;
 }
+
 .navigation {
   position: sticky;
   /* Same as body margin */
@@ -81,12 +82,6 @@ body {
   transform: scaleX(1);
 }
 
-.img-txt {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-}
-
 .location-img {
   display: grid;
   grid-template-columns: auto;
@@ -130,7 +125,7 @@ span {
 
 .craft {
   display: grid;
-  grid-template-columns: minmax(auto, 50%) repeat(2, 1fr);
+  grid-template-columns: minmax(auto, 35%) repeat(2, 1fr);
   gap: 2rem;
 
   scroll-margin-block-start: 80px;
@@ -183,6 +178,7 @@ span {
   border-top: 5px solid var(--color-primary);
   border-bottom: 5px solid var(--color-primary);
 }
+
 table,
 th,
 td {
@@ -196,7 +192,7 @@ table {
   text-align: center;
 }
 
-tbody > tr:nth-child(2n + 1) {
+tbody>tr:nth-child(2n + 1) {
   background-color: #222;
 }
 
@@ -208,7 +204,7 @@ tbody > tr:nth-child(2n + 1) {
 
 .all-food {
   display: grid;
-  grid-template-columns: 1fr 30%;
+  grid-template-columns: 1fr 50%;
   gap: 1rem;
   padding-top: 5rem;
 }
@@ -218,6 +214,18 @@ tbody > tr:nth-child(2n + 1) {
 .all-food-image {
   display: block;
   width: 100%;
+  border-radius: 8px;
+}
+
+.background-image {
+  
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+.flx {
+  display: flex;
+  justify-content: center;
 }
 
 .text-center {
